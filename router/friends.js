@@ -1,5 +1,4 @@
 const express = require('express');
-
 const router = express.Router();
 
 let friends = {
@@ -66,3 +65,5 @@ router.delete("/:email", (req, res) => {
   }
   res.send(`Friend with the email  ${email} deleted.`);
 });
+
+module.exports = router;
